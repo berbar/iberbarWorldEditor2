@@ -7,6 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorldEditor", "App\WorldEdi
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "App", "App", "{090A793C-38A9-48A6-AC39-712570CDF417}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lib", "Lib", "{74B22441-993A-49CE-BDA7-9555CDF4AE78}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomControls", "Lib\CustomControls\CustomControls.csproj", "{0F8FC589-D489-407A-A2E0-7F3B831C98AD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,12 +21,17 @@ Global
 		{D9233726-B294-4B48-A871-DF7DBF117C65}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D9233726-B294-4B48-A871-DF7DBF117C65}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D9233726-B294-4B48-A871-DF7DBF117C65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F8FC589-D489-407A-A2E0-7F3B831C98AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F8FC589-D489-407A-A2E0-7F3B831C98AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F8FC589-D489-407A-A2E0-7F3B831C98AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F8FC589-D489-407A-A2E0-7F3B831C98AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{D9233726-B294-4B48-A871-DF7DBF117C65} = {090A793C-38A9-48A6-AC39-712570CDF417}
+		{0F8FC589-D489-407A-A2E0-7F3B831C98AD} = {74B22441-993A-49CE-BDA7-9555CDF4AE78}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3D8D1774-F5C2-44C0-9A2B-E49394BA7B67}

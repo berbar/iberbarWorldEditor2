@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,6 +24,30 @@ namespace WorldEditor
         public MainWindow()
         {
             InitializeComponent();
+
+            TopMenu.ItemsSource = new ObservableCollection<MenuItem>()
+            {
+                new MenuItem()
+                {
+                    Name = "File",
+                    Header = "File",
+                    ItemsSource = new ObservableCollection<MenuItem>()
+                    {
+                        new MenuItem()
+                        {
+                            Name = "Open",
+                            Header = "Open"
+                        }
+                    }
+                },
+                new MenuItem()
+                {
+                    Name = "Edit",
+                    Header = "Edit",
+                }
+            };
+            var menuItem = MenuHelper.FindMenuItem(TopMenu, "File/Open");
+            Console.WriteLine(menuItem);
         }
     }
 }

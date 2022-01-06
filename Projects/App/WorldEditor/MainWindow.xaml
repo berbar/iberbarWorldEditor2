@@ -7,6 +7,26 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-
+        <DockPanel Name="MyDockPanel">
+            <!--停靠布局，让菜单栏和工具栏位于窗口顶部-->
+            <Menu DockPanel.Dock="Top" Name="TopMenu">
+            </Menu>
+            <ToolBar DockPanel.Dock="Top">
+                <!--ToolBar和StatusBar就是一个容器-->
+                <Button Content="Save"></Button>
+                <Separator></Separator>
+                <Button Content="SaveAll"></Button>
+                <Separator></Separator>
+                <Button Content="FileExplorer"></Button>
+                <Separator></Separator>
+                <Button Content="Start"></Button>
+                <Separator></Separator>
+                <Button Content="Test"></Button>
+            </ToolBar>
+            <StatusBar DockPanel.Dock="Bottom">
+                <TextBlock Text="statusBar"></TextBlock>
+            </StatusBar>
+            <Grid DockPanel.Dock="Top"></Grid>
+        </DockPanel>
     </Grid>
 </Window>
